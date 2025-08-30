@@ -29,7 +29,23 @@ const API_SITES = {
     }
     //ARCHIVE https://telegra.ph/APIs-08-12
 };
-
+{
+  "cache_time": 7200,
+  "api_site": {
+    "ffzy": {
+      "api": "http://ffzy5.tv/api.php/provide/vod",
+      "name": "非凡影视"
+    },
+    "zuid": {
+      "api": "https://api.zuidapi.com/api.php/provide/vod",
+      "name": "最大资源"
+    },
+    "ikun": {
+      "api": "https://ikunzyapi.com/api.php/provide/vod",
+      "name": "iKun资源"
+    }
+  }
+}
 // 定义合并方法
 function extendAPISites(newSites) {
     Object.assign(API_SITES, newSites);
